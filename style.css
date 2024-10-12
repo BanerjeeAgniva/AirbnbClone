@@ -16,3 +16,20 @@ nav {
 .nav--logo {
     max-width: 100px;
 }
+
+.text{
+    color: black;
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.hero--image{
+    width: 395.91px;
+    height: 232px;
+    top: 96px;
+    left: 77px;
+    gap: 0px;
+    border-radius: 8.95px 0px 0px 0px;
+    opacity: 0px;
+}
