@@ -436,7 +436,11 @@ function App() {
         null,
         _react2.default.createElement(_Navbar2.default, null),
         _react2.default.createElement(_Hero2.default, null),
-        CardData
+        _react2.default.createElement(
+            "div",
+            { className: "cards-list" },
+            CardData
+        )
     );
 }
 

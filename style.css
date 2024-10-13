@@ -48,14 +48,31 @@ section {
     margin-top: 0;
 }
 
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
 .card {
     width: 175px;
-    font-size: 0.75rem;
+    font-size: 12px;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
 }
 
 .card--image {
     width: 100%;
     border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card--stats {
@@ -67,7 +84,7 @@ section {
     height: 14px;
 }
 
-.h2{
-    font-size: 0.75rem; /* rem will adjust according to the browser in use unlike pixels */
-    font-weight: lighter;
+/* ADD */
+.card--price {
+    margin-top: auto;
 }
