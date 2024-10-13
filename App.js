@@ -8,7 +8,15 @@ export default function App() {
         <div>
             <Navbar /> 
             <Hero />
-            <Card />
+            <Card
+               img="../images/phelps.png"
+               rating="5.0"
+               reviewCount={6}
+               country="USA"
+               title="Life Lesson with Phelps"
+               price={136}
+
+            />
         </div>
     )
 }
