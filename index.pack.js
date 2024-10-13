@@ -509,9 +509,21 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Card(props) {
+    var badgeText = void 0;
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT";
+    } else if (props.location === "Online") {
+        badgeText = "ONLINE";
+    }
+
     return _react2.default.createElement(
         "div",
         { className: "card" },
+        badgeText && _react2.default.createElement(
+            "div",
+            { className: "card--badge" },
+            badgeText
+        ),
         _react2.default.createElement("img", { src: "../images/" + props.img, className: "card--image" }),
         _react2.default.createElement(
             "div",
@@ -537,12 +549,12 @@ function Card(props) {
         ),
         _react2.default.createElement(
             "p",
-            null,
+            { className: "card--title" },
             props.title
         ),
         _react2.default.createElement(
             "p",
-            null,
+            { className: "card--price" },
             _react2.default.createElement(
                 "span",
                 { className: "bold" },
