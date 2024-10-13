@@ -50,7 +50,7 @@ section {
 
 .card {
     width: 175px;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .card--image {
@@ -65,4 +65,9 @@ section {
 
 .card--star {
     height: 14px;
+}
+
+.h2{
+    font-size: 0.75rem; /* rem will adjust according to the browser in use unlike pixels */
+    font-weight: lighter;
 }
